@@ -1,0 +1,57 @@
+*{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(2,0,36);
+}
+
+div{
+    margin: 5px;
+    width:200px;
+    height: 64px;
+}
+
+#static{
+    background: rgb(255, 192, 241);
+    position: static;
+}
+
+#relative{
+    background: rgb(189, 135, 230);
+    position: relative sticky;
+    top: -69px;
+    left: 205px;
+}
+
+#absolute1{
+    width:400px;
+    height: 128px;
+    background: violet;
+    position: absolute;
+    top: 500px;
+}
+
+#absolute2{
+    background: #8e59eb;
+    position: absolute;
+    right: 20px
+}
+
+#fixed{
+    background: royalblue;
+    position: fixed;
+    bottom:0;
+    right: 0;
+}
+
+#sticky{
+    background: lightskyblue;
+    position: sticky;
+    top: 5px;
+}
+
+p{
+    color: #555;
+    font-size: 11px;
+    font-weight: 500;
+}

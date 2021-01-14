@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    border: whitesmoke;
+    color: white;
+}
+
+body {
+    background: linear-gradient(black, darkblue, darkorchid);
+}
+
+section {
+    margin: 30px;
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background: linear-gradient(to top, #c31432, #240b36);
+  }
+  aside h5 {
+      color: white;
+  }
+
+  #main h3 {
+      color: white;
+  }
+
+p {
+    font-size: 18px;
+    color: whitesmoke;
+    text-shadow: 1px 1px violet;
+}
+
+main {
+    margin: 0px 150px;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    p {
+        font-size: 30px;
+    }
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}

@@ -1,0 +1,129 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.customWidth{
+    max-width:600px;
+}
+
+#siteHeader{
+    background: url(img/header-neon-pink.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-customDark{
+    background: linear-gradient(15deg, rgba(2,0,36,1) 0%, rgb(3, 3, 41) 70%, rgb(77, 0, 80) 100%);
+}
+
+.text-customDark{
+    color:#071458; 
+}
+
+.text-customLight{
+    color: #dddddd;
+}
+
+.bg-customLight{
+    background-color: rgb(5, 0, 78);
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.tree-container{
+    display: flexbox;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:'parent child1 grandchild1'
+                        'parent child1 grandchild2'
+                        'parent child2 grandchild3'
+                        'parent child2 grandchild4';
+
+    align-items: center;
+}
+
+.node{
+    background-color:rgb(5, 0, 78);
+    border: #f8f9fa solid 2px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.parent {
+    grid-area: parent;
+}
+
+.child1{
+    grid-area: child1;
+}
+
+.child2{
+    grid-area: child2;
+}
+
+.greatgrandchild{
+    display: none;
+}
+
+@media only screen and (min-width: 992px){
+    /* Large devices */
+    #siteHeader{
+        background-size: 100%;
+    }
+
+    
+    .tree-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:'parent child1 grandchild1 greatgrandchild1'
+                            'parent child1 grandchild1 greatgrandchild2'
+                            'parent child1 grandchild2 greatgrandchild3'
+                            'parent child1 grandchild2 greatgrandchild4'
+                            'parent child2 grandchild3 greatgrandchild5'
+                            'parent child2 grandchild3 greatgrandchild6'
+                            'parent child2 grandchild4 greatgrandchild7'
+                            'parent child2 grandchild4 greatgrandchild8';
+    }
+
+
+    /*
+    .parent{
+        padding: 40% 0;
+        box-sizing: border-box;
+    }
+    */ 
+
+    .grandchild1{
+        grid-area: grandchild1;
+    }
+
+    .grandchild2{
+        grid-area: grandchild2;
+    }
+
+    .grandchild3{
+        grid-area: grandchild3;
+    }
+
+    .grandchild4{
+        grid-area: grandchild4;
+    }
+
+    .greatgrandchild{
+        display: block;
+        align-self:stretch
+    }    
+}
